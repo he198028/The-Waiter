@@ -54,6 +54,18 @@ font-size: 18px;
   box-shadow: 0px 0px 0px 0px transparent !important;
 }
 
+.languageLabel{
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 12px;
+}
+
+.lang-text:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  }
+
 /* Customer details list */
 .f-18{
   font-size: 18px;
