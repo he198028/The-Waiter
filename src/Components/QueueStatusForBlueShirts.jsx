@@ -54,7 +54,6 @@ export default class QueueStatusForBlueShirts extends Component {
                                     <th scope="col">Customer Name</th>
                                     <th scope="col">Department</th>
                                     <th scope="col">Phone Number</th>
-                                    <th scope="col">Time</th>
                                     <th scope="col">Action</th>
                                 </tr>
                             </thead>
@@ -65,8 +64,6 @@ export default class QueueStatusForBlueShirts extends Component {
                                         <td>{key.name}</td>
                                         <td>{key.dept}</td>
                                         <td>{key.phone}</td>
-                                        <td>{key.time}</td>
-
                                         <td>
                                             <label className='text-small'>Accept</label>
                                             <div className="custom-control custom-switch">
