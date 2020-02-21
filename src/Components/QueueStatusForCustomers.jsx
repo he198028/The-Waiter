@@ -3,32 +3,42 @@ import React, { Component } from 'react'
 export default class QueueStatusForCustomers extends Component {
     state = {
         customerData: [
-            {
-                "name": "Test1",
-                "phone": "+******1234",
-                "dept": "Consumer Electronics",
-                "time": "2.00PM"
-            },
-            {
-                "name": "Test2",
-                "phone": "+******1235",
-                "dept": "Smart phones",
-                "time": "4.00PM"
-            },
-            {
-                "name": "Test3",
-                "phone": "+******5236",
-                "dept": "Consumer Electronics",
-                "time": "2.00PM"
-            },
-            {
-                "name": "Test4",
-                "phone": "+******2356",
-                "dept": "Smart phones",
-                "time": "4.00PM"
-            }
+            // {
+            //     "name": "Test1",
+            //     "phone": "+******1234",
+            //     "dept": "Consumer Electronics",
+            //     "time": "2.00PM"
+            // },
+            // {
+            //     "name": "Test2",
+            //     "phone": "+******1235",
+            //     "dept": "Smart phones",
+            //     "time": "4.00PM"
+            // },
+            // {
+            //     "name": "Test3",
+            //     "phone": "+******5236",
+            //     "dept": "Consumer Electronics",
+            //     "time": "2.00PM"
+            // },
+            // {
+            //     "name": "Test4",
+            //     "phone": "+******2356",
+            //     "dept": "Smart phones",
+            //     "time": "4.00PM"
+            // }
         ]
     }
+
+    componentDidMount() {
+        fetch('http://localhost:8080/customers')
+        .then(res => res.json())
+        .then((data) => {
+          this.setState({ customerData: data })
+        })
+        .catch(console.log)
+    }
+    
     render() {
         return (
             <div className='container-fluid'>
