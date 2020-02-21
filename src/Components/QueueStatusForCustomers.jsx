@@ -51,7 +51,6 @@ export default class QueueStatusForCustomers extends Component {
                                     <th scope="col">Queue</th>
                                     <th scope="col">Customer Name</th>
                                     <th scope="col">Department</th>
-                                    <th scope="col">Phone Number</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -60,7 +59,6 @@ export default class QueueStatusForCustomers extends Component {
                                         <th scope="row">{ind + 1}</th>
                                         <td>{key.name}</td>
                                         <td>{key.dept}</td>
-                                        <td>{key.phone}</td>
                                     </tr>
                                 })
                                 }
