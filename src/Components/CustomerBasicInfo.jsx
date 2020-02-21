@@ -105,10 +105,11 @@ export default class CustomerBasicInfo extends Component {
                                     // onBlur={e => this.nameBlur()}
 
                                     >
-                                        <option selected >Select an option</option>
-                                        <option >Geek Squad</option>
-                                        <option >Mobile, Smart Living</option>
-                                        <option >Customer Service</option>
+                                        <option selected >Select an option</option>                                        
+                                        <option >Mobile & Smart Living</option>
+                                        <option >Computing Solutions</option>
+                                        <option >Home Solutions</option>
+                                        <option>Appliances</option>
                                     </select>
 
                                 </div>
