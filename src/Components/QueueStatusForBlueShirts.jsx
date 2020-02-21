@@ -30,17 +30,29 @@ export default class QueueStatusForBlueShirts extends Component {
         ]
     }
 
+    // componentDidMount() {
+    //     fetch('http://localhost:8080/customers')
+    //     .then(res => res.json())
+    //     .then((data) => {
+    //       this.setState({ customerData: data })
+    //     })
+    //     .catch(console.log)
+    // }
+
     componentDidMount() {
+        setInterval(this.getData, 2000);
+    }
+
+    getData = () =>
         fetch('http://localhost:8080/customers')
         .then(res => res.json())
         .then((data) => {
-          this.setState({ customerData: data })
+            this.setState({ customerData: data })
         })
         .catch(console.log)
-    }
 
     onCheckBoxClicked(){
-    fetch('http://localhost:8080/customers', { method: 'delete' })
+        fetch('http://localhost:8080/customers', { method: 'delete' })
     }
 
     render() {
