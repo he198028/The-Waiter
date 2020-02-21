@@ -106,9 +106,9 @@ export default class CustomerBasicInfo extends Component {
 
                                     >
                                         <option selected >Select an option</option>
-                                        <option >Smart Appliances</option>
-                                        <option >Consumer Electronics</option>
-                                        <option >Virtual Reality</option>
+                                        <option >Geek Squad</option>
+                                        <option >Mobile, Smart Living</option>
+                                        <option >Customer Service</option>
                                     </select>
 
                                 </div>

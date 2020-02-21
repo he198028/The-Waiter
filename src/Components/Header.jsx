@@ -13,7 +13,7 @@ export default class Header extends Component {
                             <div className="col-md-4"><img src="/Images/bby_logo.png" className="brandlogo" alt="logo" />
                             </div>
                             <div className="col-md-5 ">
-                                <span tabIndex="0" className="headertitle">What do you need help with?</span>
+                                <span tabIndex="0" className="headertitle">Welcome to Best Buy Queue !</span>
                             </div>
                         </div>                                                    
                     </div>                    
