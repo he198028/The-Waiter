@@ -37,7 +37,11 @@ export default class QueueStatusForBlueShirts extends Component {
           this.setState({ customerData: data })
         })
         .catch(console.log)
-      }
+    }
+
+    onCheckBoxClicked(){
+    fetch('http://localhost:8080/customers', { method: 'delete' })
+    }
 
     render() {
         return (
@@ -67,7 +71,7 @@ export default class QueueStatusForBlueShirts extends Component {
                                         <td>
                                             <label className='text-small'>Accept</label>
                                             <div className="custom-control custom-switch">
-                                                <input type="checkbox" class="custom-control-input" id={`customSwitch${ind + 1}`} />
+                                                <input type="checkbox" class="custom-control-input" id={`customSwitch${ind + 1}`}  onChange={this.onCheckBoxClicked}/>
                                                 <label class="custom-control-label" for={`customSwitch${ind + 1}`}></label>
 
                                             </div>
