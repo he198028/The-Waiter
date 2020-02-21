@@ -56,6 +56,7 @@ export default class CustomerBasicInfo extends Component {
         const result = await response.text();
         // this.setState({name: result});
         this.setState({ isSuccess: true });
+        setTimeout(() => this.setState({ isSuccess: false }), 3000);
     }
 
     // submitCustomerData = (e) => this.setState({ isSuccess: true })
