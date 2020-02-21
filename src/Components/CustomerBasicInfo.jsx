@@ -54,8 +54,8 @@ export default class CustomerBasicInfo extends Component {
           body: JSON.stringify(data)
         });
         const result = await response.text();
-        console.log(result);
         // this.setState({name: result});
+        this.setState({ isSuccess: true });
     }
 
     // submitCustomerData = (e) => this.setState({ isSuccess: true })
